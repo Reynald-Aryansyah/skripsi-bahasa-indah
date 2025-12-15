@@ -112,7 +112,7 @@ const Index = () => {
                 Kating.AI
               </h1>
               <p className="text-sm text-muted-foreground hidden sm:block">
-                Ubah teks biasa menjadi bahasa skripsi yang formal dan natural.
+                Ubah teks mentah menjadi bahasa skripsi yang formal dan natural.
               </p>
             </div>
           </div>
@@ -123,7 +123,7 @@ const Index = () => {
       <main className="container py-6 md:py-10">
         {/* Mobile subtitle */}
         <p className="text-sm text-muted-foreground mb-6 sm:hidden text-center">
-          Ubah teks biasa menjadi bahasa skripsi yang formal dan natural.
+          Ubah teks mentah menjadi bahasa skripsi yang formal dan natural.
         </p>
 
         {/* Two Column Layout */}
@@ -136,7 +136,7 @@ const Index = () => {
               </span>
               <Textarea
                 variant="academic"
-                placeholder="Tempelkan teks kamu di sini (hasil ChatGPT, draft skripsi, dll)"
+                placeholder="Tempelkan teks kamu di sini (draft skripsi, hasil ChatGPT, dll)"
                 className="min-h-[240px] md:min-h-[300px] resize-none font-body"
                 value={inputText}
                 onChange={(e) => setInputText(e.target.value)}
@@ -150,7 +150,7 @@ const Index = () => {
           <div className="space-y-3 animate-slide-up" style={{ animationDelay: "0.1s" }}>
             <div className="flex items-center justify-between">
               <label className="text-sm font-medium text-foreground">
-                Hasil Bahasa Akademik
+                Versi Bahasa Akademik
               </label>
               {outputText && (
                 <Button
@@ -175,7 +175,7 @@ const Index = () => {
             </div>
             <Textarea
               variant="readonly"
-              placeholder="Hasil parafrase bahasa skripsi akan muncul di sini."
+              placeholder="Hasil perbaikan bahasa akademik akan muncul di sini."
               className="min-h-[240px] md:min-h-[300px] resize-none font-body"
               value={outputText}
               readOnly
@@ -195,11 +195,11 @@ const Index = () => {
             {isProcessing ? (
               <>
                 <LoadingSpinner size="sm" />
-                Memproses teks…
+                Kating lagi bantuin ngerapihin…
               </>
             ) : (
               <>
-                Ubah ke Bahasa Skripsi
+                Rapikan Jadi Bahasa Skripsi
                 <ArrowRight className="w-4 h-4" />
               </>
             )}
@@ -207,7 +207,7 @@ const Index = () => {
           
           {/* Version Info */}
           <p className="text-sm text-muted-foreground text-center">
-            Mode Gratis: Maksimal {WORD_LIMIT} kata · Tanpa login
+            Mode Gratis · Maksimal {WORD_LIMIT} kata · Tanpa login
           </p>
         </div>
 
@@ -221,7 +221,7 @@ const Index = () => {
       <footer className="border-t border-border/50 mt-12">
         <div className="container py-6">
           <p className="text-sm text-muted-foreground text-center">
-            Dibuat untuk membantu mahasiswa Indonesia. Gunakan dengan bijak.
+            kating.AI dibuat untuk membantu mahasiswa Indonesia merapikan bahasa akademik. Gunakan dengan bijak.
           </p>
         </div>
       </footer>

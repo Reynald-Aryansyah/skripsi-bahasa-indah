@@ -13,7 +13,7 @@ export function PremiumCTA() {
             Butuh hasil lebih formal?
           </h3>
           <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-            Mode Dosen Killer tersedia untuk teks panjang dan gaya super akademik.
+            Mode Dosen Killer cocok untuk teks panjang dan revisi akhir sebelum bimbingan.
           </p>
           <Button variant="premium" size="sm" className="gap-2">
             <Sparkles className="w-4 h-4" />
