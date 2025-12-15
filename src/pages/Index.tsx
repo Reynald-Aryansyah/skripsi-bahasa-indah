@@ -108,8 +108,8 @@ const Index = () => {
               <GraduationCap className="w-6 h-6 text-primary" />
             </div>
             <div>
-              <h1 className="font-heading text-xl md:text-2xl font-bold text-foreground">
-                SkripsiSakti
+            <h1 className="font-heading text-xl md:text-2xl font-bold text-foreground">
+                Kating.AI
               </h1>
               <p className="text-sm text-muted-foreground hidden sm:block">
                 Ubah teks biasa menjadi bahasa skripsi yang formal dan natural.
